@@ -3,7 +3,9 @@ var log = function(output){
 };
 
 export var appName = "Chapter 10 Code Illustrations";
+
 export var dummyFunction = function(){
     return "I am a dummy function";
 }
-export default log; 
+
+   export default log; 

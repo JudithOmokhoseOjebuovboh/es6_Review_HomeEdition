@@ -3842,10 +3842,23 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*!********************************!*\
   !*** ./src/chapter10/index.js ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("//bilding our first example\n(function () {\n  document.getElementById(\"output\").innerHTML = \"Hello Chapter 10\";\n})();\n\n//# sourceURL=webpack:///./src/chapter10/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tools__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tools */ \"./src/chapter10/tools.js\");\n//bilding our first example\n\n/*ES5 illustration\r\n(() => {\r\n    document.getElementById(\"output\").innerHTML = \"Hello Chapter 10\"\r\n   })();\r\n\r\nvar log = function(output){\r\n    document.getElementById(\"output\").innerHTML = output;\r\n   };\r\n   //For illustration, call the function above to log an output\r\n   log(\"Welcome to Chapter 10!\");*/\n\nObject(_tools__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"Welcome to Chapter 10! The application name is \" + _tools__WEBPACK_IMPORTED_MODULE_0__[\"appName\"] + \". There is a function that returns \" + Object(_tools__WEBPACK_IMPORTED_MODULE_0__[\"dummyFunction\"])());\n\n//# sourceURL=webpack:///./src/chapter10/index.js?");
+
+/***/ }),
+
+/***/ "./src/chapter10/tools.js":
+/*!********************************!*\
+  !*** ./src/chapter10/tools.js ***!
+  \********************************/
+/*! exports provided: appName, dummyFunction, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"appName\", function() { return appName; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"dummyFunction\", function() { return dummyFunction; });\nvar log = function log(output) {\n  document.getElementById(\"output\").innerHTML = output;\n};\n\nvar appName = \"Chapter 10 Code Illustrations\";\nvar dummyFunction = function dummyFunction() {\n  return \"I am a dummy function\";\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (log);\n\n//# sourceURL=webpack:///./src/chapter10/tools.js?");
 
 /***/ }),
 
